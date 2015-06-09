@@ -10,10 +10,10 @@ var app            = express();
 var port = process.env.PORT || 8080; 
 
 // set the static files location /public/img will be /img 
-app.use(express.static(__dirname + '/public/modules/ticket/')); 
+app.use(express.static(__dirname + '/public/modules/static/')); 
 
 // routes ==================================================
-require('./app/routes/ticket.server.routes')(app); // configure our routes
+require('./app/routes/sample.server.routes')(app); // configure our routes
 
 // start app ===============================================
 app.listen(port);               
