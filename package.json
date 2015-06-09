@@ -1,0 +1,11 @@
+{
+      "name": "ticket",
+      "main": "server.js",
+      "dependencies": {
+        "express" : "~4.11.2"       
+      },
+	  "repository": {
+  "type": "git",
+  "url": "https://github.com/rajeswarakumar/Samples.git"
+}
+}
