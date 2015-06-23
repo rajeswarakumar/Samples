@@ -7,10 +7,19 @@ module.exports = function(app) {
 
         // frontend routes =========================================================
         // route to handle all angular requests
-         app.get('/Test', function(req, res) {
+         app.get('/', function(req, res) {
             res.sendfile('./Index.html'); // load our public/index.html file
         });
-        app.get('/Sample', function(req, res) {
+        app.get('/HelloWorld', function(req, res) {
             res.sendfile('./1_HelloWorld.html'); // load our public/index.html file
+        });
+                app.get('/SimpleInitDirective', function(req, res) {
+            res.sendfile('./2_SimpleInitDirective.html'); // load our public/index.html file
+        });
+                app.get('/SimpleExpression', function(req, res) {
+            res.sendfile('./3_SimpleExpression.html'); // load our public/index.html file
+        });
+                app.get('/SimpleModelDirective', function(req, res) {
+            res.sendfile('./4_SimpleModelDirective.html'); // load our public/index.html file
         });
     };
