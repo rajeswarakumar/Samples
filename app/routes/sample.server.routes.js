@@ -10,5 +10,7 @@ module.exports = function(app) {
          app.get('*', function(req, res) {
             res.sendfile('./Index.html'); // load our public/index.html file
         });
-
+        app.get('Sample', function(req, res) {
+            res.sendfile('./1_HelloWorld.html'); // load our public/index.html file
+        });
     };
